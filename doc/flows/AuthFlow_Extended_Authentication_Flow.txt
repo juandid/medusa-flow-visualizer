@@ -1,0 +1,34 @@
+@startmindmap
+title Authentication Flow "Extended Authentication Flow"
+
+*[#Orange] Authentication Flow           \nExtended Authentication Flow  
+**[#DeepSkyBlue] PasswordAuth                  \nPassword Check Step           
+**[#YellowGreen] SelectionStep                 \nAuth Method-Based Subflow     \nSelection                     
+***[#Orange] SelectionOption               \nAirlock 2FA Selection Option  
+****[#DeepSkyBlue] Airlock2FAUserFactorAuthentication
+***[#Orange] SelectionOption               \nmTAN Selection Option         
+****[#DeepSkyBlue] MtanAuth                      \nmTAN Authentication Step      
+***[#Orange] SelectionOption               \nCronto Selection Option       
+****[#DeepSkyBlue] CrontoAuth                    \nCronto Authentication Step    
+***[#Orange] SelectionOption               \nOATH OTP Selection Option     
+****[#DeepSkyBlue] OathOtpAuth                   \nOATH OTP Authentication Step  
+***[#Orange] SelectionOption               \nVasco OTP Selection Option    
+****[#DeepSkyBlue] VascoOtpAuth                  \nVasco OTP Authentication Step 
+***[#Orange] SelectionOption               \nPassword Only Selection Option
+****[#DeepSkyBlue] NoOperation                   
+***[#Orange] SelectionOption               \nEmail OTP Selection Option    
+****[#DeepSkyBlue] EmailOtpAuth                  \nEmail OTP Authentication      
+***[#Orange] SelectionOption               \nDevice Token Selection        
+****[#DeepSkyBlue] DeviceTokenAuth               \nDevice Token Step             
+***[#Orange] SelectionOption               \nMatrix Selection Option       
+****[#DeepSkyBlue] MatrixAuth                    \nMatrix Authentication Step    
+***[#Orange] SelectionOption               \nCronto Activation Selection   \nOption                        
+****[#DeepSkyBlue] CrontoActivation              \nCronto Activation Step        
+***[#Orange] SelectionOption               \nmTAN Registration Option      
+****[#DeepSkyBlue] UserDataEdit                  \nmTAN Number Registration Step 
+****[#DeepSkyBlue] MtanVerification              \nmTAN Verification with IAK    \nStep                          
+****[#DeepSkyBlue] ApplyChanges                  \nPersist mTAN Number Step      
+**[#DeepSkyBlue] MandatoryPasswordChange       \nMandatory Password Change Step
+**[#DeepSkyBlue] MigrationSelection            \nExtended Migration Step       
+
+@endmindmap
